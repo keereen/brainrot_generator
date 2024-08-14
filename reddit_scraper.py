@@ -18,8 +18,11 @@ class Reddit_scraper:
 
         subreddit = self.reddit.subreddit(subreddit_name)
         subreddit_top = subreddit.top(time_filter = time_filter_value, limit = post_limit)
+        
         # remove stickied posts as an optional toggle
+
         print(subreddit_top)
+
         return subreddit_top
         '''for post in subreddit_top:
             print(post.selftext)'''
